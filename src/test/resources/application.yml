@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ledger
+    username: ledger
+    password: ledger
+
+ledger:
+  security:
+    jwt-secret: test-only-jwt-secret-key-at-least-32-chars
+    ttl-minutes: 60
+    client-id: ledger-api
+    client-secret: ledger-secret
